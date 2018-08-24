@@ -1,7 +1,7 @@
 <template>
     <card class="flex bg-90 flex-col items-center justify-center">
         <div class="px-3 py-3">
-            <h1 class="text-center text-3xl text-80 font-light">
+            <h1 class="text-center text-2xl text-80 font-light">
             	<button class="bg-blue hover:bg-blue-dark text-white font-bold py-2 px-4 border border-blue-darker rounded" @click.prevent="handleButton">
             		Edit Environment File
             </button>

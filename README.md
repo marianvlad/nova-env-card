@@ -3,7 +3,9 @@
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/marianvlad/nova-env-card.svg?style=flat-square)](https://packagist.org/packages/marianvlad/nova-env-card)
 [![Total Downloads](https://img.shields.io/packagist/dt/marianvlad/nova-env-card.svg?style=flat-square)](https://packagist.org/packages/marianvlad/nova-env-card)
 
-Edit environment File inside Nova.
+Edit Environment file inside a modal.
+
+![nova-env-card](https://i.imgur.com/bqD2qK1.png)
 
 ## Installation
 

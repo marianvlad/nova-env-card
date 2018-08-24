@@ -5,6 +5,7 @@
 
 Edit Environment file inside a modal.
 
+![nova-env-card](https://i.imgur.com/qBu3CaE.png)
 ![nova-env-card](https://i.imgur.com/bqD2qK1.png)
 
 ## Installation

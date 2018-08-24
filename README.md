@@ -6,8 +6,8 @@
 Edit Environment file inside a modal.
 
 <p float="left">
-  <img src="https://i.imgur.com/qBu3CaE.png" width="100" />
-  <img src="https://i.imgur.com/bqD2qK1.png" width="100" /> 
+  <img src="https://i.imgur.com/qBu3CaE.png" width="40%" />
+  <img src="https://i.imgur.com/bqD2qK1.png" width="40%" /> 
 </p>
 
 ## Installation

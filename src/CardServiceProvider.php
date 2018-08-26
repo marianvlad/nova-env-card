@@ -6,6 +6,7 @@ use Laravel\Nova\Nova;
 use Laravel\Nova\Events\ServingNova;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
+use Marianvlad\NovaEnvCard\Http\Middleware\Authorize;
 
 class CardServiceProvider extends ServiceProvider
 {
@@ -37,7 +38,7 @@ class CardServiceProvider extends ServiceProvider
             return;
         }
 
-        Route::middleware(['nova'])
+        Route::middleware(['nova', Authorize::class])
                 ->prefix('nova-vendor/nova-env-card')
                 ->group(__DIR__.'/../routes/api.php');
     }

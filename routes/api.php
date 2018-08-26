@@ -2,11 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use Marianvlad\NovaEnvCard\Http\Controllers\EnvironmentController;
 
-Route::get('/environment', function (Request $request) {
-    return file_get_contents(base_path('.env'));
-});
-
-Route::post('/environment', function (Request $request) {
-    file_put_contents(base_path('.env'), $request->value);
-});
+Route::get('/environment', EnvironmentController::class.'@show');
+Route::post('/environment', EnvironmentController::class.'@update');

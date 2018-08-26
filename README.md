@@ -7,7 +7,7 @@ Edit Environment file inside a modal.
 
 <p float="left">
   <img src="https://i.imgur.com/qBu3CaE.png" width="40%" />
-  <img src="https://i.imgur.com/bqD2qK1.png" width="40%" /> 
+  <img src="https://i.imgur.com/sP9YTxF.png" width="40%" /> 
 </p>
 
 ## Installation
@@ -29,7 +29,9 @@ public function cards()
 {
     return [
         // ...
-        new \Marianvlad\NovaEnvCard\NovaEnvCard,
+        (new \Marianvlad\NovaEnvCard\NovaEnvCard)->canSee(function ($request) {
+        	return $request->user()->role == 'admin';
+        })
     ];
 }
 ```

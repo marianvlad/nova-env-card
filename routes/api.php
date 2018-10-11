@@ -1,8 +1,6 @@
 <?php
 
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use Marianvlad\NovaEnvCard\Http\Controllers\EnvironmentController;
 
-Route::get('/environment', EnvironmentController::class.'@show');
-Route::post('/environment', EnvironmentController::class.'@update');
+Route::get('/environment', 'Marianvlad\NovaEnvCard\Http\Controllers\Environment@get');
+Route::post('/environment', 'Marianvlad\NovaEnvCard\Http\Controllers\Environment@post');
